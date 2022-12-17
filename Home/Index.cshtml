@@ -1,0 +1,180 @@
+﻿
+@{
+   ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div>
+    <!-- Welcome Area -->
+    <div class="welcome-area welcome-area--l4 bg-default dark-mode-texts" style="background-image: url(main/image/home-4/hero-l4-image.png);">
+        <div class="container">
+            <div class="row align-items-center justify-content-center justify-content-md-start">
+                <!-- Welcome content Area -->
+                <div class="col-xxl-6 col-xl-7 col-lg-9 col-md-10">
+                    <div class="welcome-content welcome-content--l3">
+                        <h1 class="welcome-content--l3__title">الگوی عالی برای تازه کارها یا سنپایس ها</h1>
+                        <p class="welcome-content--l3__descriptions">
+                            وقتی، در حالی که دره دوست داشتنی پر از بخار در اطراف است معنی <br class="d-none d-sm-block">
+                            خورشید نصف النهار به غیر قابل نفوذ بالایی برخورد می کند.
+                        </p>
+                        <!-- Newsletter -->
+                        @*<div class="newsletter--l4">
+                            <form action="/demos/fastland-html/">
+                                <div class="form-control">
+                                    <i class="fa fa-envelope text-electric-violet-3"></i>
+                                    <input type="text" placeholder="ایمیل خود را وارد کنید ">
+                                </div>
+                                <button class="btn btn-torch-red rounded-50 text-white">رایگان شروع کنید</button>
+                            </form>
+                            <p class="newsletter--l4__text">جدیدترین الگوها را مستقیماً در صندوق ورودی خود دریافت کنید</p>
+                        </div>*@
+                        <!--/ .Newsletter -->
+                    </div>
+                </div>
+                <!--/ .Welcome Content Area -->
+            </div>
+        </div>
+    </div>
+    <!--/ .Welcome Area -->
+    <!-- Main section -->
+    <div class="main-padding">
+
+        <!-- categories -->
+        <div class="mt-5">
+            <!-- category header -->
+            <div class="col-md-12">
+                <h2 class="section-header">قیمت آهن آلات </h2>
+                <!-- uvc-heading-spacer line_only -->
+                <div class="section-line"></div>
+                <div>
+                    بهترین قیمت محصولات فولادی
+                </div>
+            </div>
+            <!-- category list -->
+            <div class="row m-5 justify-content-around">
+                <div class="product-square-box">
+                    <div class="card text-center product-card-body" id="main-loole">
+                        <img class="fit-product-img image" src="~/Main/image/main-icon/loole-gray.png" id="loole" />
+                        <img class="fit-product-img image-hover " src="~/Main/image/main-icon/loole-orange.png" id="orange-loole">
+                        <p class="product-square-text ">لوله</p>
+                    </div>
+                </div>
+                <div class="product-square-box">
+                    <div class="card text-center product-card-body" id="main-sim">
+                        <img class="fit-product-img  image" src="~/Main/image/main-icon/sim-gray.png" id="sim">
+                        <img class="fit-product-img image-hover" src="~/Main/image/main-icon/sim-orange.png" id="orange-sim">
+                        <p class="product-square-text">مفتول</p>
+                    </div>
+                </div>
+                <div class="product-square-box">
+                    <div class="card text-center product-card-body " id="main-mil">
+                        <img class="fit-product-img" src="~/Main/image/main-icon/MILGERD-gray.png" id="mil">
+                        <img class="fit-product-img image-hover" src="~/Main/image/main-icon/MILGERD-orange.png" id="orange-mil">
+                        <p class="product-square-text">میلگرد</p>
+                    </div>
+                </div>
+                <div class="product-square-box">
+                    <div class="card text-center product-card-body " id="main-nabshi">
+                        <img class="fit-product-img" src="~/Main/image/main-icon/NABSHI-gray.png" id="nabshi">
+                        <img class="fit-product-img image-hover" src="~/Main/image/main-icon/NABSHI-orange.png" id="orange-nabshi">
+                        <p class="product-square-text">نبشی</p>
+                    </div>
+                </div>
+                <div class="product-square-box">
+                    <div class="card text-center product-card-body " id="main-profil">
+                        <img class="fit-product-img" src="~/Main/image/main-icon/profil-gray.png" id="profil">
+                        <img class="fit-product-img image-hover" src="~/Main/image/main-icon/profil-orange.png" id="orange-profil">
+                        <p class="product-square-text">پروفیل</p>
+                    </div>
+                </div>
+                <div class="product-square-box">
+                    <div class="card text-center product-card-body" id="main-tir">
+                        <img class="fit-product-img" src="~/Main/image/main-icon/tirAhan-gray.png" id="tir">
+                        <img class="fit-product-img image-hover" src="~/Main/image/main-icon/tirAhan-orange.png" id="orange-tir">
+                        <p class="product-square-text">تیرآهن</p>
+                    </div>
+                </div>
+                <div class="product-square-box">
+                    <div class="card text-center product-card-body " id="main-varagh">
+                        <img class="fit-product-img" src="~/Main/image/main-icon/varagh-gray.png" id="varagh">
+                        <img class="fit-product-img image-hover" src="~/Main/image/main-icon/varagh-orange.png" id="orange-varagh">
+                        <p class="product-square-text">ورق</p>
+                    </div>
+                </div>
+            </div>
+   
+        </div>
+
+    </div>
+   
+    <!-- .Main section -->
+</div>
+<script src="~/Main/plugins/jquery/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.slider').slick({
+            slidesToShow: 1,
+            centerMode: true,
+            centerPadding: "15%",
+            speed: 500
+        });
+
+
+        //loole hover
+        $("#main-loole").hover(function () {
+            $('#orange-loole').css('display', 'block');
+            $('#loole').css('display', 'none');
+        }, function () {
+            $('#orange-loole').css('display', 'none');
+            $('#loole').css('display', 'block');
+        });
+        //sim hover
+        $("#main-sim").hover(function () {
+            $('#orange-sim').css('display', 'block');
+            $('#sim').css('display', 'none');
+        }, function () {
+            $('#orange-sim').css('display', 'none');
+            $('#sim').css('display', 'block');
+        });
+        //mil hover
+        $("#main-mil").hover(function () {
+            $('#orange-mil').css('display', 'block');
+            $('#mil').css('display', 'none');
+        }, function () {
+            $('#orange-mil').css('display', 'none');
+            $('#mil').css('display', 'block');
+        });
+        //nabshi hover
+        $("#main-nabshi").hover(function () {
+            $('#orange-nabshi').css('display', 'block');
+            $('#nabshi').css('display', 'none');
+        }, function () {
+            $('#orange-nabshi').css('display', 'none');
+            $('#nabshi').css('display', 'block');
+        });
+        // profil hover
+        $("#main-profil").hover(function () {
+            $('#orange-profil').css('display', 'block');
+            $('#profil').css('display', 'none');
+        }, function () {
+            $('#orange-profil').css('display', 'none');
+            $('#profil').css('display', 'block');
+        });
+        // tir hover
+        $("#main-tir").hover(function () {
+            $('#orange-tir').css('display', 'block');
+            $('#tir').css('display', 'none');
+        }, function () {
+            $('#orange-tir').css('display', 'none');
+            $('#tir').css('display', 'block');
+        });
+        // varagh hover
+        $("#main-varagh").hover(function () {
+            $('#orange-varagh').css('display', 'block');
+            $('#varagh').css('display', 'none');
+        }, function () {
+            $('#orange-varagh').css('display', 'none');
+            $('#varagh').css('display', 'block');
+        });
+    });
+</script>

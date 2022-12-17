@@ -1,0 +1,429 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>
+        همکار آهن
+    </title>
+    <link rel="shortcut icon" href="Main/image/png/favicon.png" type="image/x-icon">
+    <!-- Bootstrap , fonts & icons  -->
+    <link rel="stylesheet" href="Main/css/bootstrap.css">
+    <link rel="stylesheet" href="Main/fonts/icon-font/css/style.css">
+    <link rel="stylesheet" href="Main/fonts/typography-font/typo.css">
+    <link rel="stylesheet" href="Main/fonts/fontawesome-5/css/all.css">
+    <!-- Plugin'stylesheets  -->
+    <link rel="stylesheet" href="Main/plugins/aos/aos.min.css">
+    <link rel="stylesheet" href="Main/plugins/fancybox/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="Main/plugins/nice-select/nice-select.min.css">
+    <link rel="stylesheet" href="Main/plugins/slick/slick.min.css">
+    <link rel="stylesheet" href="Main/css/Site.css">
+    <!-- Vendor stylesheets  -->
+    <link rel="stylesheet" href="Main/plugins/theme-mode-switcher/switcher-panel.css">
+    <link rel="stylesheet" href="Main/css/main.css">
+    <!-- Custom stylesheet -->
+</head>
+
+<body data-theme-mode-panel-active data-theme="light">
+    <div class="site-wrapper overflow-hidden ">
+        <div id="loading">
+            <img src="~/Main/image/preloader.gif" alt="">
+        </div>
+    </div>
+    <header class="header site-header header site-header--menu-center dark-mode-texts dynamic-sticky-bg  site-header--absolute site-header--sticky">
+        @*mt-3 mt-lg-0*@
+        <div>
+            <!-- top menu -->
+            <div class="main-padding top-menu row ">
+                <!-- Brand Logo-->
+                <div class=" brand-logo  col-md-2 col-sm-8 col-8">
+                    <a href="home-marketing.html">
+                        <img class="fit-logo" src="Main/image/main-icon/Artboard 333.png" alt="">
+                    </a>
+                </div>
+
+                <!-- search bar-->
+                <div class="center col-md-7 col-sm-2 col-1">
+                    <div class=" input-group center">
+                            <input class="form-control textbox-search" placeholder="جست‌و‌جوی محصولات">
+                            <button type="button" class=" btn-search btn ">
+                                <i class="fa fa-search m-3"></i>
+                            </button>
+                        </div>
+                </div>
+                <!-- login btn-->
+                <div class="center col-md-2 col-sm-1 col-1 d-flex justify-content-end vertical-line ">
+                    <a href="#" class="btn header-btn " id="main-login">
+                        <img class=" login-icon" src="~/Main/image/main-icon/person-gray.png" id="login" />
+                        <img class=" login-icon image-hover" src="~/Main/image/main-icon/person-orange.png" id="orange-login" />
+                        <span class="login-text" id="login-text">ورود/ثبت نام</span>
+                    </a>
+                </div>
+                <!-- shopping cart -->
+                <div class=" col-md-1 col-sm-1 col-1 d-flex justify-content-start shopping-cart" id="main-cart">
+                    <a href="#" class="btn header-btn ">
+                        <img class="shopping-cart-icon" src="~/Main/image/main-icon/shoppingcart-gray.png" id="cart" />
+                        <img class="shopping-cart-icon image-hover" src="~/Main/image/main-icon/shoppingcart-orange.png" id="orange-cart" />
+                    </a>
+                </div>
+
+            </div>
+            <!-- border menu -->
+            <!-- mobile menu trigger -->
+            <div class="mobile-menu-trigger">
+                <span></span>
+            </div>
+            <!--menu-->
+            <div class="menu-block-wrapper  menu-sep-left border-menu main-padding">
+                <div class="menu-overlay"></div>
+                <nav class="site-navbar nav-flex menu-block" id="append-menu-header">
+                    <div class="mobile-menu-head">
+                        <div class="go-back">
+                            <i class="fa fa-angle-left"></i>
+                        </div>
+                        <div class="go-back2">
+                            <a href="home-marketing.html">
+                                <img class="fit-logo" src="Main/image/main-icon/Artboard 333.png" alt="">
+                            </a>
+                        </div>
+                        <div class="current-menu-title">
+
+                        </div>
+                        <div class="mobile-menu-close">&times;</div>
+                    </div>
+                    <ul class="site-menu-main">
+                        <li class="nav-item nav-item-has-children has-megamenu">
+                            <a href="#" class="nav-link-item drop-trigger">
+                                محصولات
+                            </a>
+                            <div class="sub-menu megamenu  megadropdown-center  d-lg-flex" id="submenu-100">
+                                <ul class="col-lg-12 row-lg list-unstyled py-lg-2">
+                                    <li class="col-lg-3">
+                                        <div class="single-dropdown-block">
+                                            <h3>سبک گالری </h3>
+                                            <a href="portfolio-grid-2-container.html"
+                                               class="mega-drop-menu-item sub-menu--item">شبکه دو ستونه</a>
+                                            <a href="portfolio-grid-3-container.html"
+                                               class="mega-drop-menu-item sub-menu--item">شبکه سه ستونه</a>
+                                            <a href="portfolio-grid-4-container.html"
+                                               class="mega-drop-menu-item sub-menu--item">شبکه چهار ستونه</a>
+                                            <a href="portfolio-grid-2-container-fluid.html"
+                                               class="mega-drop-menu-item sub-menu--item">شبکه پنج ستونه</a>
+                                            <a href="portfolio-grid-3-container-fluid.html"
+                                               class="mega-drop-menu-item sub-menu--item">شبکه شش ستونه</a>
+                                            <a href="portfolio-grid-4-container-fluid.html"
+                                               class="mega-drop-menu-item sub-menu--item">شبکه هفت ستونه</a>
+                                        </div>
+                                    </li>
+                                    <li class="col-lg-3">
+                                        <div class="single-dropdown-block">
+                                            <h3>گالری (بدون فاصله) </h3>
+                                            <a href="portfolio-grid-2-no-gap.html"
+                                               class="mega-drop-menu-item sub-menu--item">شبکه دو ستونه</a>
+                                            <a href="portfolio-grid-3-no-gap.html"
+                                               class="mega-drop-menu-item sub-menu--item">شبکه سه ستونه</a>
+                                            <a href="portfolio-grid-4-no-gap.html"
+                                               class="mega-drop-menu-item sub-menu--item">شبکه چهار ستونه</a>
+                                            <a href="portfolio-grid-2-no-gap-full.html"
+                                               class="mega-drop-menu-item sub-menu--item">شبکه پنج ستونه</a>
+                                            <a href="portfolio-grid-3-no-gap-full.html"
+                                               class="mega-drop-menu-item sub-menu--item">شبکه شش ستونه</a>
+                                            <a href="portfolio-grid-4-no-gap-full.html"
+                                               class="mega-drop-menu-item sub-menu--item">شبکه هفت ستونه</a>
+                                        </div>
+                                    </li>
+                                    <li class="col-lg-3">
+                                        <div class="single-dropdown-block">
+                                            <h3>سبک ساختمانی </h3>
+                                            <a href="portfolio-masonary-2-no-gap.html"
+                                               class="mega-drop-menu-item sub-menu--item">ساختمانی دو ستونه</a>
+                                            <a href="portfolio-masonary-3-no-gap.html"
+                                               class="mega-drop-menu-item sub-menu--item">ساختمانی سه ستونه</a>
+                                            <a href="portfolio-masonary-4-no-gap.html"
+                                               class="mega-drop-menu-item sub-menu--item">
+                                                ساختمانی چهار
+                                                ستونه
+                                            </a>
+                                            <a href="portfolio-masonary-2-no-gap-full.html"
+                                               class="mega-drop-menu-item sub-menu--item">شبکه پنج ستونه</a>
+                                            <a href="portfolio-masonary-3-no-gap-full.html"
+                                               class="mega-drop-menu-item sub-menu--item">شبکه شش ستونه</a>
+                                            <a href="portfolio-masonary-4-no-gap-full.html"
+                                               class="mega-drop-menu-item sub-menu--item">شبکه هفت ستونه</a>
+                                        </div>
+                                    </li>
+                                    <li class="col-lg-3">
+                                        <div class="single-dropdown-block">
+                                            <h3>جزئیات نمونه کار </h3>
+                                            <a href="portfolio-details-1.html"
+                                               class="mega-drop-menu-item sub-menu--item">
+                                                جزئیات نمونه کار سبک
+                                                1
+                                            </a>
+                                            <a href="portfolio-details-2.html"
+                                               class="mega-drop-menu-item sub-menu--item">
+                                                جزئیات نمونه کار سبک
+                                                2
+                                            </a>
+                                            <a href="portfolio-details-3.html"
+                                               class="mega-drop-menu-item sub-menu--item">
+                                                جزئیات نمونه کار سبک
+                                                3
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item nav-item-has-children has-megamenu">
+                            <a href="#" class="nav-link-item drop-trigger">
+                                درباره ما
+                            </a>
+                        </li>
+                        <li class="nav-item nav-item-has-children has-megamenu">
+                            <a href="#" class="nav-link-item drop-trigger">
+                                تماس با ما
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <!--/.Mobile Menu Hamburger Ends-->
+        </div>
+
+    </header>
+
+    @*..............Main section..............*@
+    <div class="main-container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+    @*..............Main section..............*@
+
+
+
+    @*..............Footer section..............*@
+    <footer>
+        <!-- online shopping process -->
+
+        <div class="shopping-process main-padding">
+
+            <div class="inlone-bullets">
+                <i class="fa fa-circle circle-icon" aria-hidden="true"></i> <h6 class="footer-header-text">فرآیند خرید آنلاین</h6>
+            </div>
+
+            <div class="row justify-content-around mt-3">
+                <div class="shopping-process-box">
+                    <div class=" text-center shopping-process-card-body ">
+                        <!-- class="card-body" -->
+                        <img class="shopping-process-image" src="~/Main/image/shopping-process-icon/register.png">
+                        <p class="shopping-process-text">ثبت نام/ ورود به سایت</p>
+                    </div>
+                </div>
+                <div class="shopping-process-box">
+                    <div class="text-center shopping-process-card-body ">
+                        <!-- class="card-body" -->
+                        <img class="shopping-process-image" src="~/Main/image/shopping-process-icon/select.png">
+                        <p class="shopping-process-text">انتخاب محصول</p>
+                    </div>
+                </div>
+                <div class="shopping-process-box">
+                    <div class="text-center shopping-process-card-body ">
+                        <!-- class="card-body" -->
+                        <img class="shopping-process-image" src="~/Main/image/shopping-process-icon/customer info.png">
+                        <p class="shopping-process-text">درج مشخصات خریدار</p>
+                    </div>
+                </div>
+                <div class="shopping-process-box">
+                    <div class="text-center shopping-process-card-body ">
+                        <!-- class="card-body" -->
+                        <img class="shopping-process-image" src="~/Main/image/shopping-process-icon/final check.png">
+                        <p class="shopping-process-text">بازبینی پیش فاکتور نهایی</p>
+                    </div>
+                </div>
+                <div class="shopping-process-box">
+                    <div class=" text-center shopping-process-card-body ">
+                        <!-- class="card-body" -->
+                        <img class="shopping-process-image" src="~/Main/image/shopping-process-icon/money.png">
+                        <p class="shopping-process-text">پرداخت بیعانه</p>
+                    </div>
+                </div>
+                <div class="shopping-process-box">
+                    <div class="text-center shopping-process-card-body ">
+                        <!-- class="card-body" -->
+                        <img class="shopping-process-image" src="~/Main/image/shopping-process-icon/truck.png">
+                        <p class="shopping-process-text">تحویل بار</p>
+                    </div>
+                </div>
+                <div class="shopping-process-box">
+                    <div class=" text-center shopping-process-card-body ">
+                        <!-- class="card-body" -->
+                        <img class="shopping-process-image" src="~/Main/image/shopping-process-icon/final payment.png">
+                        <p class="shopping-process-text">پرداخت نهایی</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- .online shopping process -->
+        <!-- main footer -->
+        <div class="row main-padding main-footer">
+            <div class="col-md-2">
+                <div class="inlone-bullets">
+                    <i class="fa fa-circle circle-icon" aria-hidden="true"></i> <h6 class="footer-header-text">قیمت محصولات</h6>
+                </div>
+                <div class="footer-list">
+                    <ul class="no-bullets-list">
+                        <li class="mt-5">
+                            قیمت تیرآهن
+                        </li>
+                        <li>
+                            قیمت میلگرد
+                        </li>
+                        <li>
+                            قیمت نبشی
+                        </li>
+                        <li>
+                            قیمت پروفیل
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="inlone-bullets">
+                    <i class="fa fa-circle circle-icon" aria-hidden="true"></i> <h6 class="footer-header-text">همکار آهن</h6>
+                </div>
+                <div class="footer-list">
+                    <ul class="no-bullets-list">
+                        <li class="mt-5">
+                            خدمات ما
+                        </li>
+                        <li>
+                            تماس با ما
+                        </li>
+                        <li>
+                            درباره ما
+                        </li>
+                        <li>
+                            خبرنامه
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="inlone-bullets">
+                    <i class="fa fa-circle circle-icon" aria-hidden="true"></i> <h6 class="footer-header-text">راه‌های ارتباطی</h6>
+                </div>
+                <div class="footer-list">
+                    <ul class="no-bullets-list">
+                        <li class="mt-5">
+                            <img class="contact-image" src="~/Main/image/contact-image/location.png" />
+                            <span>دفتر فروش - خیابان میرفندرسکی - جنب بانک تجارت - مجتمع مهرداد - طبقه دوم</span>
+                        </li>
+                        <li>
+                            <img class="contact-image" src="~/Main/image/contact-image/location.png" />
+                            <span>انبار اول - کیلومتر 4 نجف آباد - مقابل پمپ بنزین جام جم - انبار مقاوم سازه احیا فولاد</span>
+                        </li>
+                        <li>
+                            <img class="contact-image" src="~/Main/image/contact-image/location.png" />
+                            <span>انبار دوم - کیلومتر 4 نجف آباد - مقابل پمپ بنزین جام جم - انبار مقاوم سازه احیا فولاد</span>
+
+                        </li>
+                        <li>
+                            <img class="contact-image" src="~/Main/image/contact-image/phone.png" />
+                            <p class="d-inline-block" style="margin-left:17px"> 031-123458</p>
+                            <span>09134077998</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-md-6">
+                        <p>
+                            با ثبت ایمیل از آخرین اخبار مطلع شوید.
+                        </p>
+                        @*class="input-group"class="textbox-email  "class="btn-email btn"*@
+                        <form>
+                            <input class="textbox-email" type="email" placeholder="ایمیل شما">
+                            <input class="btn-email btn" type="submit" value="ثبت">
+                        </form>
+                    </div>
+                    <div class="col-md-6">
+                        <p>
+                            همراه ما باشید.
+                        </p>
+                        @*class="input-group"class="textbox-email  "class="btn-email btn"*@
+                        <div class="social-icons">
+                            <a class="btn social-btn">
+                                <img class="social-image" src="~/Main/image/contact-image/pinterest.png" />
+                            </a>
+                            <a class="btn social-btn">
+                                <img class="social-image" src="~/Main/image/contact-image/twitte.png" />
+                            </a>
+                            <a class="btn social-btn">
+                                <img class="social-image" src="~/Main/image/contact-image/linkdin.png" />
+                            </a>
+                            <a class="btn social-btn">
+                                <img class="social-image" src="~/Main/image/contact-image/insta.png" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+        <!-- .main footer -->
+        <hr class="rights-hr" />
+        <!-- rights -->
+        <div>
+            <p class="rights-text">کلیه حقوق مادی و معنوی برای این سایت محفوظ می باشد.</p>
+        </div>
+        <!-- .rights -->
+    </footer>
+    @*..............Footer section..............*@
+    <script src="~/Main/plugins/jquery/jquery.min.js"></script>
+
+    <script src="~/Main/plugins/jquery/jquery-migrate.min.js"></script>
+    <script src="~/Main/js/bootstrap.bundle.js"></script>
+    <script src="~/Main/plugins/fancybox/jquery.fancybox.min.js"></script>
+    <script src="~/Main/plugins/nice-select/jquery.nice-select.min.js"></script>
+    <script src="~/Main/plugins/aos/aos.min.js"></script>
+    <script src="~/Main/plugins/counter-up/jquery.counterup.min.js"></script>
+    <script src="~/Main/plugins/counter-up/waypoints.min.js"></script>
+    <script src="~/Main/plugins/slick/slick.min.js"></script>
+    <script src="~/Main/plugins/skill-bar/skill.bars.jquery.js"></script>
+    <script src="~/Main/plugins/isotope/isotope.pkgd.min.js"></script>
+    <!--<script src="./plugins/theme-mode-switcher/gr-theme-mode-switcher.js"></script>-->
+    <!-- Activation Script -->
+    <script src="~/Main/js/menu.js"></script>
+    <script src="~/Main/js/custom.js"></script>
+    @*<script src="~/js/site.js" asp-append-version="true"></script>
+        @await RenderSectionAsync("Scripts", required: false)*@
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    <script src="~/Main/plugins/jquery/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // login hover
+            $("#main-login").hover(function () {
+                $('#orange-login').css('display', 'block');
+                $('#login').css('display', 'none');
+                $('#login-text').css('color', '#eb6f24');
+            }, function () {
+                $('#orange-login').css('display', 'none');
+                $('#login').css('display', 'block');
+                $('#login-text').css('color', '#9E9E9E');
+            });
+            // shopping cart hover
+            $("#main-cart").hover(function () {
+                $('#orange-cart').css('display', 'block');
+                $('#cart').css('display', 'none');
+            }, function () {
+                $('#orange-cart').css('display', 'none');
+                $('#cart').css('display', 'block');
+            });
+        });
+    </script>
+</body>
+</html>
